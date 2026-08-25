@@ -1,0 +1,306 @@
+import { FabricDetails } from '../types';
+
+export const FABRIC_DETAILS_CATALOG: Record<string, FabricDetails> = {
+  "Cotton": {
+    description: "Natural staple fiber derived from the seed boll of the Gossypium cotton plant. Renowned for softness, breathability, and versatility.",
+    fiber_origin: "Gossypium Plant Seed Boll",
+    weight_gsm: "140 - 200 GSM (Medium)",
+    water_footprint_liters_per_kg: "9,750 L/kg",
+    carbon_footprint_kg_per_kg: "3.8 kg CO2e/kg",
+    biodegradability_time: "1 - 5 months (Compostable)",
+    durability_rating: 4.0,
+    breathability_level: "High (Moisture absorbent)",
+    care_instructions: "Machine wash warm (40°C), tumble dry medium, iron hot.",
+    certifications: ["OEKO-TEX Standard 100", "Better Cotton Initiative (BCI)"],
+    best_applications: ["T-Shirts", "Casual Shirts", "Bedding", "Underwear"],
+    pros: ["Skin-friendly & soft", "Excellent breathability", "Fully biodegradable"],
+    cons: ["High agricultural water footprint", "Prone to shrinking", "Requires pesticides in non-organic growth"]
+  },
+  "Organic cotton": {
+    description: "Cultivated without synthetic pesticides, insecticides, or GMO seeds using sustainable rain-fed agricultural systems.",
+    fiber_origin: "Non-GMO Gossypium Plant",
+    weight_gsm: "140 - 220 GSM (Medium)",
+    water_footprint_liters_per_kg: "2,430 L/kg (Rain-fed)",
+    carbon_footprint_kg_per_kg: "1.9 kg CO2e/kg",
+    biodegradability_time: "1 - 4 months (Zero toxic residue)",
+    durability_rating: 4.2,
+    breathability_level: "High (Hypoallergenic)",
+    care_instructions: "Machine wash cool (30°C) with eco detergent, line dry, warm iron.",
+    certifications: ["GOTS (Global Organic Textile Standard)", "OEKO-TEX Standard 100", "Fair Trade"],
+    best_applications: ["Baby Apparel", "Eco T-Shirts", "Loungewear", "Organic Bedding"],
+    pros: ["91% less water than conventional cotton", "Zero toxic chemical exposure for farmers", "Ultra-soft & hypoallergenic"],
+    cons: ["Slightly higher raw material cost", "Requires more land area per harvest"]
+  },
+  "Linen": {
+    description: "Eco-friendly bast fiber made from the stalks of the flax plant (Linum usitatissimum). Celebrated for cool breathability and rustic texture.",
+    fiber_origin: "Flax Plant Bast Fiber (Linum usitatissimum)",
+    weight_gsm: "160 - 240 GSM (Medium-heavy)",
+    water_footprint_liters_per_kg: "2,500 L/kg (Naturally rain-irrigated)",
+    carbon_footprint_kg_per_kg: "1.6 kg CO2e/kg",
+    biodegradability_time: "2 weeks - 2 months",
+    durability_rating: 4.6,
+    breathability_level: "Ultra-High (Thermo-regulating)",
+    care_instructions: "Hand wash or gentle machine cycle (30°C), lay flat to dry, iron while damp.",
+    certifications: ["European Flax Certified", "OEKO-TEX Standard 100", "Masters of Linen"],
+    best_applications: ["Summer Shirts", "Dresses", "Relaxed Trousers", "Table Linen"],
+    pros: ["30% stronger than cotton", "Grows in poor soil without chemical fertilizers", "Naturally antibacterial & cooling"],
+    cons: ["Creases & wrinkles easily", "Low elastic recovery"]
+  },
+  "Hemp": {
+    description: "High-yield bast fiber from Cannabis sativa. One of the strongest natural plant fibers with exceptional carbon sequestration capabilities.",
+    fiber_origin: "Cannabis Sativa Stalk Fiber",
+    weight_gsm: "180 - 320 GSM (Heavyweight)",
+    water_footprint_liters_per_kg: "2,100 L/kg",
+    carbon_footprint_kg_per_kg: "0.8 kg CO2e/kg (Carbon-negative crop)",
+    biodegradability_time: "1 - 3 months",
+    durability_rating: 4.9,
+    breathability_level: "High (Anti-microbial)",
+    care_instructions: "Machine wash cold/warm, line dry. Softens naturally with every wash.",
+    certifications: ["OEKO-TEX Standard 100", "USDA Organic Hemp", "GOTS"],
+    best_applications: ["Heavy Outerwear", "Workwear Trousers", "Denim Jackets", "Backpacks"],
+    pros: ["Sequesters 4x more CO2 than trees", "3x tensile strength of cotton", "Requires zero pesticides"],
+    cons: ["Stiff hand-feel prior to initial wash cycles", "Higher processing cost"]
+  },
+  "Denim": {
+    description: "Sturdy cotton twill fabric woven with warp-faced indigo threads and white weft threads, creating characteristic diagonal ribbing.",
+    fiber_origin: "Heavyweight Cotton / Organic Cotton Twill",
+    weight_gsm: "300 - 450 GSM (Heavyweight 10oz - 14oz)",
+    water_footprint_liters_per_kg: "8,500 L/kg (Conventional)",
+    carbon_footprint_kg_per_kg: "4.2 kg CO2e/kg",
+    biodegradability_time: "6 months - 1 year (Undenatured cotton)",
+    durability_rating: 4.8,
+    breathability_level: "Medium (Structured)",
+    care_instructions: "Wash inside out cold (30°C), air dry away from direct sunlight, avoid frequent washing.",
+    certifications: ["Cradle to Cradle Certified Denim", "OEKO-TEX Standard 100"],
+    best_applications: ["Jeans", "Denim Jackets", "Work Overshirts", "Overalls"],
+    pros: ["Extreme durability & longevity", "Timeless style that ages with patina", "High abrasion resistance"],
+    cons: ["Traditional indigo finishing uses heavy water & chemicals unless laser/ozone treated"]
+  },
+  "Silk": {
+    description: "Continuous protein filament produced by the silkworm (Bombyx mori). Renowned for shimmering luster, smooth touch, and fluid drape.",
+    fiber_origin: "Mulberry Silkworm Cocoon Filament",
+    weight_gsm: "50 - 120 GSM (Ultra-lightweight)",
+    water_footprint_liters_per_kg: "5,800 L/kg",
+    carbon_footprint_kg_per_kg: "25.4 kg CO2e/kg (Thermal processing)",
+    biodegradability_time: "1 - 3 months",
+    durability_rating: 3.8,
+    breathability_level: "High (Thermo-regulating protein)",
+    care_instructions: "Dry clean or delicate hand wash in lukewarm water with silk detergent. Never wring.",
+    certifications: ["OEKO-TEX Standard 100"],
+    best_applications: ["Evening Gowns", "Blouses", "Luxury Scarves", "Lingerie"],
+    pros: ["Luxurious sheen & fluid drape", "Natural temperature regulator", "Hypoallergenic smooth surface"],
+    cons: ["Traditional sericulture boils pupae in cocoons (animal ethics)", "High carbon footprint", "Sensitive to sun & moisture"]
+  },
+  "Peace silk": {
+    description: "Also known as Ahimsa silk. Harvested ethically after the silk moth has naturally emerged from the cocoon without harming the insect.",
+    fiber_origin: "Ahimsa Wild Mulberry / Eri Silkworm Cocoon",
+    weight_gsm: "70 - 140 GSM (Lightweight)",
+    water_footprint_liters_per_kg: "4,200 L/kg",
+    carbon_footprint_kg_per_kg: "12.0 kg CO2e/kg",
+    biodegradability_time: "1 - 3 months",
+    durability_rating: 4.0,
+    breathability_level: "High (Ethical Protein Fiber)",
+    care_instructions: "Hand wash cold with gentle mild detergent, drip dry in shade.",
+    certifications: ["GOTS Cruelty-Free Silk", "World Fair Trade Organization (WFTO)"],
+    best_applications: ["Sustainable Formalwear", "Bridal Gowns", "Luxury Tops"],
+    pros: ["100% cruelty-free & animal-friendly production", "Exquisite texture & soft natural luster", "Fully biodegradable"],
+    cons: ["Higher price per yard", "Moth emergence creates spun silk rather than continuous filament"]
+  },
+  "Wool": {
+    description: "Natural crimped animal protein fiber from sheep fleece. Exceptional warmth, natural elasticity, and flame resistance.",
+    fiber_origin: "Sheep Fleece (Ovis aries)",
+    weight_gsm: "200 - 450 GSM (Medium to Heavyweight)",
+    water_footprint_liters_per_kg: "3,400 L/kg",
+    carbon_footprint_kg_per_kg: "14.0 kg CO2e/kg (Livestock methane emissions)",
+    biodegradability_time: "3 - 6 months in soil",
+    durability_rating: 4.5,
+    breathability_level: "High (Insulating & Moisture Wicking)",
+    care_instructions: "Hand wash cold with wool woolite detergent or dry clean. Lay flat to dry.",
+    certifications: ["Responsible Wool Standard (RWS)", "ZQ Merino", "OEKO-TEX"],
+    best_applications: ["Sweaters", "Winter Coats", "Tailored Suits", "Thermal Base Layers"],
+    pros: ["Superior thermal insulation", "Wrinkle-resistant elastic fiber memory", "Naturally flame retardant"],
+    cons: ["Livestock methane emissions", "Requires gentle wool-safe washing to prevent felting"]
+  },
+  "Polyester": {
+    description: "Synthetic petroleum-derived polymer fiber (Polyethylene Terephthalate / PET). Highly durable, quick-drying, and wrinkle resistant.",
+    fiber_origin: "Petroleum-Derived PET Polymer",
+    weight_gsm: "100 - 250 GSM (Variable)",
+    water_footprint_liters_per_kg: "100 L/kg (Low water, high chemical)",
+    carbon_footprint_kg_per_kg: "9.5 kg CO2e/kg",
+    biodegradability_time: "200 - 500 years (Non-biodegradable)",
+    durability_rating: 4.8,
+    breathability_level: "Low (Traps moisture unless micro-engineered)",
+    care_instructions: "Machine wash cold/warm, tumble dry low. Use micro-filter bag.",
+    certifications: ["OEKO-TEX Standard 100"],
+    best_applications: ["Activewear", "Rainwear Shells", "Linings", "Fleece Jackets"],
+    pros: ["High tensile strength & abrasion resistance", "Low cost", "Wrinkle resistant & quick drying"],
+    cons: ["Derived from fossil fuels", "Sheds microplastics during wash cycles", "Non-biodegradable landfill waste"]
+  },
+  "Recycled polyester": {
+    description: "Produced from melted post-consumer plastic water bottles (PET) and diverted textile waste. Diverts plastic from ocean and landfills.",
+    fiber_origin: "Post-Consumer PET Water Bottles / Ocean Plastic",
+    weight_gsm: "120 - 280 GSM (Medium)",
+    water_footprint_liters_per_kg: "60 L/kg",
+    carbon_footprint_kg_per_kg: "4.2 kg CO2e/kg (59% less CO2 than virgin PET)",
+    biodegradability_time: "200 - 500 years (Use circular recycling)",
+    durability_rating: 4.7,
+    breathability_level: "Medium (Quick-dry engineered)",
+    care_instructions: "Machine wash cold with Guppyfriend washing bag to capture microfibers. Line dry.",
+    certifications: ["Global Recycled Standard (GRS)", "Recycled Claim Standard (RCS)", "OEKO-TEX"],
+    best_applications: ["Eco Activewear", "Performance Outerwear", "Recycled Fleece", "Bags"],
+    pros: ["59% carbon reduction vs virgin polyester", "Diverts ocean & landfill plastic waste", "Extremely durable"],
+    cons: ["Sheds microplastics during wash cycles without filter bag", "Eventually requires mechanical/chemical recycling"]
+  },
+  "Nylon": {
+    description: "Synthetic polyamide fiber known for exceptional elasticity, toughness, and abrasion resistance.",
+    fiber_origin: "Petrochemical Polyamide Polymer",
+    weight_gsm: "80 - 220 GSM (Light to Medium)",
+    water_footprint_liters_per_kg: "180 L/kg",
+    carbon_footprint_kg_per_kg: "11.2 kg CO2e/kg (Nitrous oxide emissions during synthesis)",
+    biodegradability_time: "300 - 400 years",
+    durability_rating: 5.0,
+    breathability_level: "Low-Medium (High resilience)",
+    care_instructions: "Machine wash cold, air dry, cool iron if needed.",
+    certifications: ["OEKO-TEX Standard 100"],
+    best_applications: ["Swimwear", "Windbreakers", "Stockings", "Technical Backpacks"],
+    pros: ["Unmatched abrasion & tear strength", "High elasticity & stretch recovery", "Lightweight"],
+    cons: ["Petroleum-based with high GHG emissions during production", "Microplastic shedding"]
+  },
+  "Recycled nylon": {
+    description: "Made from regenerated nylon waste such as discarded fishing nets, carpet fluff, and industrial nylon waste (e.g. ECONYL®).",
+    fiber_origin: "Ocean Fishing Nets & Industrial Nylon Waste (ECONYL®)",
+    weight_gsm: "100 - 250 GSM (Medium)",
+    water_footprint_liters_per_kg: "80 L/kg",
+    carbon_footprint_kg_per_kg: "3.3 kg CO2e/kg (80% carbon footprint reduction)",
+    biodegradability_time: "Infinitely recyclable chemically",
+    durability_rating: 4.9,
+    breathability_level: "Medium (High elasticity)",
+    care_instructions: "Machine wash cool in microfiber filter bag, line dry.",
+    certifications: ["Global Recycled Standard (GRS)", "ECONYL® Certified", "OEKO-TEX"],
+    best_applications: ["Sustainable Swimwear", "Compressive Activewear", "Outdoor Jackets"],
+    pros: ["Cleans marine ecosystems & ocean ghost nets", "80% reduction in global warming impact", "Can be regenerated indefinitely"],
+    cons: ["Microfiber catch bag recommended for laundering"]
+  },
+  "Rayon/Viscose": {
+    description: "Regenerated cellulosic fiber produced by dissolving wood pulp using chemical xanthate processing. Soft, silky, and comfortable.",
+    fiber_origin: "Dissolved Wood Pulp Cellulose",
+    weight_gsm: "110 - 180 GSM (Lightweight)",
+    water_footprint_liters_per_kg: "3,000 L/kg",
+    carbon_footprint_kg_per_kg: "5.5 kg CO2e/kg",
+    biodegradability_time: "1 - 3 months",
+    durability_rating: 3.2,
+    breathability_level: "High (Silky breathability)",
+    care_instructions: "Hand wash cold or dry clean. Do not wring or tumble dry.",
+    certifications: ["FSC Certified Wood Pulp", "CanopyStyle Verified"],
+    best_applications: ["Summer Dresses", "Flowy Blouses", "Skirt Linings"],
+    pros: ["Silky drape & soft hand-feel", "High moisture absorption", "Biodegradable"],
+    cons: ["Requires harsh CS2 chemical processing unless eco-viscose (ECOVERO)", "Weaker when wet"]
+  },
+  "Tencel/Lyocell": {
+    description: "Sustainable regenerated wood fiber manufactured in a closed-loop process where 99.5% of non-toxic solvent is recovered and reused.",
+    fiber_origin: "Sustainably Farmed Eucalyptus Wood Pulp",
+    weight_gsm: "120 - 220 GSM (Light to Medium)",
+    water_footprint_liters_per_kg: "1,000 L/kg",
+    carbon_footprint_kg_per_kg: "1.2 kg CO2e/kg",
+    biodegradability_time: "6 weeks - 3 months (Home compostable)",
+    durability_rating: 4.4,
+    breathability_level: "Ultra-High (50% higher absorption than cotton)",
+    care_instructions: "Machine wash cold gentle cycle, line dry, medium iron.",
+    certifications: ["Lenzing TENCEL™ Certified", "OEKO-TEX Standard 100", "FSC / PEFC"],
+    best_applications: ["Luxury Dresses", "Silky Shirts", "Bedding", "Activewear Blends"],
+    pros: ["99.5% closed-loop organic solvent recycling", "Silky smooth drape & soft sheen", "50% more moisture absorbent than cotton"],
+    cons: ["Slightly premium price point"]
+  },
+  "Bamboo lyocell": {
+    description: "Pure bamboo pulp processed using closed-loop lyocell technology without toxic chemicals. Naturally antibacterial and silky.",
+    fiber_origin: "Organic Fast-Growing Bamboo Stems",
+    weight_gsm: "130 - 210 GSM (Medium)",
+    water_footprint_liters_per_kg: "1,100 L/kg",
+    carbon_footprint_kg_per_kg: "1.4 kg CO2e/kg",
+    biodegradability_time: "2 - 4 months",
+    durability_rating: 4.1,
+    breathability_level: "Ultra-High (Naturally anti-bacterial)",
+    care_instructions: "Machine wash cold, tumble dry low or line dry.",
+    certifications: ["OEKO-TEX Standard 100", "Organic Bamboo Certified"],
+    best_applications: ["Underwear", "Loungewear", "Sleepwear", "Base Layers"],
+    pros: ["Bamboo grows up to 1 meter/day without pesticides", "Closed-loop clean processing", "Naturally thermal regulating"],
+    cons: ["Must verify true Lyocell process rather than chemical viscose bamboo"]
+  },
+  "Leather": {
+    description: "Durable animal hide material processed through tanning. Heavyweight, windproof, and long-lasting structured material.",
+    fiber_origin: "Bovine / Ovine Animal Hide",
+    weight_gsm: "400 - 800 GSM (Heavyweight)",
+    water_footprint_liters_per_kg: "17,000 L/kg",
+    carbon_footprint_kg_per_kg: "37.0 kg CO2e/kg (High livestock & tanning footprint)",
+    biodegradability_time: "25 - 50 years (Chrome-tanned)",
+    durability_rating: 5.0,
+    breathability_level: "Low (Windproof structure)",
+    care_instructions: "Specialist leather cleaner only. Condition with leather balm annually.",
+    certifications: ["Leather Working Group (LWG) Gold/Silver Certified"],
+    best_applications: ["Jackets", "Belts", "Footwear", "Handbags"],
+    pros: ["Decades of extreme durability", "Windproof & water-resistant", "Classic aesthetic"],
+    cons: ["High carbon & water footprint", "Non-vegan animal hide", "Chrome tanning generates heavy metal waste unless vegetable tanned"]
+  },
+  "Synthetic blend": {
+    description: "Blended fabric combining synthetic fibers (polyester/nylon/elastane) engineered for stretch, durability, and cost efficiency.",
+    fiber_origin: "Petroleum Synthetic Blend (Poly/Nylon/Spandex)",
+    weight_gsm: "150 - 280 GSM (Medium)",
+    water_footprint_liters_per_kg: "250 L/kg",
+    carbon_footprint_kg_per_kg: "8.5 kg CO2e/kg",
+    biodegradability_time: "200+ years (Non-biodegradable)",
+    durability_rating: 4.5,
+    breathability_level: "Medium (High elasticity)",
+    care_instructions: "Machine wash cold, tumble dry low. Use microfiber filter bag.",
+    certifications: ["OEKO-TEX Standard 100"],
+    best_applications: ["Activewear Leggings", "Sports Jackets", "Swimwear"],
+    pros: ["High stretch & shape retention", "Wrinkle resistant", "Low cost"],
+    cons: ["Sheds microplastics", "Difficult to recycle fiber-to-fiber blends", "Derived from fossil fuels"]
+  },
+  "Cotton-polyester blend": {
+    description: "Hybrid textile combining natural cotton softness with synthetic polyester strength and wrinkle resistance.",
+    fiber_origin: "50% Cotton / 50% Recycled Polyester Blend",
+    weight_gsm: "160 - 240 GSM (Medium)",
+    water_footprint_liters_per_kg: "4,900 L/kg",
+    carbon_footprint_kg_per_kg: "6.2 kg CO2e/kg",
+    biodegradability_time: "Partial (Polyester portion remains)",
+    durability_rating: 4.5,
+    breathability_level: "Medium (Balanced comfort)",
+    care_instructions: "Machine wash warm (40°C), tumble dry low.",
+    certifications: ["OEKO-TEX Standard 100", "BCI Cotton"],
+    best_applications: ["Everyday Hoodies", "Work Uniforms", "Casual Tees"],
+    pros: ["Combines softness with wrinkle resistance", "More durable than pure cotton", "Affordable"],
+    cons: ["Mixed fiber blend is hard to separate for circular recycling", "Sheds microplastics from polyester content"]
+  },
+  "Unknown": {
+    description: "Unverified textile composition requiring physical burn testing or spectroscopic analysis to determine exact fiber blend.",
+    fiber_origin: "Unidentified Textile Fiber",
+    weight_gsm: "Variable GSM",
+    water_footprint_liters_per_kg: "Unmapped",
+    carbon_footprint_kg_per_kg: "Unmapped",
+    biodegradability_time: "Requires lab testing",
+    durability_rating: 3.0,
+    breathability_level: "Unmapped",
+    care_instructions: "Gentle cold hand wash or dry clean recommended until fiber composition is verified.",
+    certifications: ["Pending Lab Verification"],
+    best_applications: ["Visual Sample / Swatch"],
+    pros: ["Visual candidate matches available"],
+    cons: ["Visual appearance alone is ambiguous; physical testing recommended"]
+  }
+};
+
+export function getClientFabricDetails(fabricName?: string): FabricDetails {
+  if (!fabricName) return FABRIC_DETAILS_CATALOG["Unknown"];
+  
+  const keys = Object.keys(FABRIC_DETAILS_CATALOG);
+  for (const key of keys) {
+    if (key.toLowerCase() === fabricName.toLowerCase()) {
+      return FABRIC_DETAILS_CATALOG[key];
+    }
+  }
+  for (const key of keys) {
+    if (key.toLowerCase().includes(fabricName.toLowerCase()) || fabricName.toLowerCase().includes(key.toLowerCase())) {
+      return FABRIC_DETAILS_CATALOG[key];
+    }
+  }
+  return FABRIC_DETAILS_CATALOG["Unknown"];
+}
